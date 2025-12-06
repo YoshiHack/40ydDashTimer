@@ -1,3 +1,5 @@
+##Journal
+
 Journal Entry – December 5, 2025
 
 Today I started planning the 40-yard Dash Timer and created the GitHub repository: https://github.com/YoshiHack/40ydDashTimerimage_2025-12-05_190850729
