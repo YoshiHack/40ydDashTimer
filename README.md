@@ -12,7 +12,6 @@ Laser modules provide tight, reliable beams to ensure accurate timing.
 
 ---
 
----
 
 ## Features
 - Fully wireless start and finish gates  
