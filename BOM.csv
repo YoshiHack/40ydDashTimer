@@ -1,15 +1,15 @@
-Item	Name	Quantity	Unit Price ($)	Total ($)	URL	Running total ($)	Notes	
-1	ESP32-DevKitC-32E Development Board	3	10	30	https://www.digikey.com/en/products/detail/espressif-systems/ESP32-DEVKITC-32E/12091810	30	MCU for start/finish/base station	
-2	Laser Diode Module 5V	2	5.95	11.9	https://www.adafruit.com/product/1054	41.9	Laser beam for gate	
-3	Photodiode Receiver / Light Sensor	2	0.3	0.6	https://www.digikey.com/en/products/detail/liteon/LTR-4206E/121710	42.5	Break-beam detection sensor	
-4	OLED I²C Display	1	19.95	19.95	https://www.digikey.com/en/products/detail/adafruit-industries-llc/938/5774238	62.45	Base station display	
-5	Active Piezo Buzzer 5V	1	0.33	0.33	https://www.addicore.com/products/active-buzzer-5v?srsltid=AfmBOop-lgo3ZL9sDTf6a_FAHHsowkGRmnNyBDUC2orbnuTU4dIsjfTO	62.78	Start/finish beep	
-6	SPDT Slide Switch	3	0.71	2.13	https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602	64.91	Main power switch	
-8	LED Red Status Indicator	6	1.71	10.26	https://www.digikey.com/en/products/detail/broadcom-limited/HLMP-6300/637659	75.17	Status indication LEDs	
-9	LED Green Status Indicator	6	1.71	10.26	https://www.digikey.com/en/products/detail/broadcom-limited/HLMP-6500/637666	85.43	Status indication LEDs	
-10	JST-PH 2-pin Cable (battery/laser connections)	5	1.77	8.85	https://www.digikey.com/en/products/detail/adafruit-industries-llc/4714/13175532?s=N4IgTCBcDaIFIGUAqBaACgCQARhQBwEsA7LAYQEMAjAGwFMQBdAXyA	94.28	Connector for sensors + battery	
-11	Hookup Wire Kit (22 AWG)	1	27.45	27.45	https://www.digikey.com/en/products/detail/jameco-electronics/JMS9313-01G/25966176	121.73	General wiring	
-12	USB Power Bank (NOT from Digi-key – Amazon)	3	25	75	https://www.amazon.com/Anker-Travel-Ready-Technology-High-Speed-Output（Black），1pack/dp/B0D5CLSMFB?th=1	196.73	Power for each ESP32 board	
-13	Micro USB Cable (charging/power)	3	5.99	17.97	https://www.amazon.com/Charging-Compatible-Samsung-Android-Smartphones/dp/B0B1DKK4YK/ref=sxin_28_pa_sp_search_thematic_sspa?content-id=amzn1.sym.4a3002a5-aa21-4f7f-92ac-d6af941e83f8%3Aamzn1.sym.4a3002a5-aa21-4f7f-92ac-d6af941e83f8&cv_ct_cx=micro%2Busb%2Bcable&keywords=micro%2Busb%2Bcable&pd_rd_i=B0B1DKK4YK&pd_rd_r=cf0eae90-cacc-4eca-ad17-5eb8632b3a18&pd_rd_w=V0qQ2&pd_rd_wg=PitP7&pf_rd_p=4a3002a5-aa21-4f7f-92ac-d6af941e83f8&pf_rd_r=N5AYRQTPF0A4MJRBJ37K&qid=1765242344&refinements=p_n_g-101014941094111%3A119746480011&rnid=119746477011&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-e169343e-09af-4d41-85b1-8335fe8f32d0-spons&aref=4srWwr5c3B&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1	214.7	For powering ESP32	
-14	300 Resistor 	10	0.1	1	https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-300R/1492	215.7	300 Ω through-hole (for LEDs)	
-15	10 Ressistor 	5	0.1	0.5	https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338	216.2	10 kΩ through-hole (for phototransistor pull-ups)	
+Item,	Name,	Quantity,	Unit Price ($),	Total ($),	URL,	Running total, ($)	Notes,	
+1,	ESP32-DevKitC-32E Development Board,	3,	10,	30,	https://www.digikey.com/en/products/detail/espressif-systems/ESP32-DEVKITC-32E/12091810,	30,	MCU, for start/finish/base station,	
+2,	Laser Diode Module 5V,	2,	5.95,	11.9,	https://www.adafruit.com/product/1054,	41.9,	Laser beam for gate,	
+3,	Photodiode Receiver / Light Sensor,	2,	0.3,	0.6,	https://www.digikey.com/en/products/detail/liteon/LTR-4206E/121710,	42.5,	Break-beam detection sensor,	
+4,	OLED I²C Display,	1,	19.95	19.95	https://www.digikey.com/en/products/detail/adafruit-industries-llc/938/5774238	62.45	Base station display,	
+5,	Active Piezo Buzzer 5V,	1,	0.33,	0.33,	https://www.addicore.com/products/active-buzzer-5v?srsltid=AfmBOop-lgo3ZL9sDTf6a_FAHHsowkGRmnNyBDUC2orbnuTU4dIsjfTO,	62.78,	Start/finish beep,
+6,	SPDT Slide Switch,	3,	0.71,	2.13,	https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602,	64.91,	Main power switch,	
+8,	LED Red Status Indicator,	6,	1.71,	10.26,	https://www.digikey.com/en/products/detail/broadcom-limited/HLMP-6300/637659,	75.17,	Status indication LEDs,	
+9,	LED Green Status Indicator,	6,	1.71,	10.26,	https://www.digikey.com/en/products/detail/broadcom-limited/HLMP-6500/637666,	85.43,	Status indication LEDs,
+10,	JST-PH 2-pin Cable (battery/laser connections),	5	1.77,	8.85,	https://www.digikey.com/en/products/detail/adafruit-industries-llc/4714/13175532?s=N4IgTCBcDaIFIGUAqBaACgCQARhQBwEsA7LAYQEMAjAGwFMQBdAXyA,	94.28,	Connector for sensors + battery,
+11,	Hookup Wire Kit (22 AWG),	1,	27.45,	27.45,	https://www.digikey.com/en/products/detail/jameco-electronics/JMS9313-01G/25966176,	121.73,	General wiring,	
+12,	USB Power Bank,	3,	25,	75,	https://www.amazon.com/Anker-Travel-Ready-Technology-High-Speed-Output（Black），1pack/dp/B0D5CLSMFB?th=1,	196.73,	Power for each ESP32 board,	
+13,	Micro USB Cable (charging/power),	3,	5.99,	17.97,	https://www.amazon.com/Charging-Compatible-Samsung-Android-Smartphones/dp/B0B1DKK4YK/ref=sxin_28_pa_sp_search_thematic_sspa?content-id=amzn1.sym.4a3002a5-aa21-4f7f-92ac-d6af941e83f8%3Aamzn1.sym.4a3002a5-aa21-4f7f-92ac-d6af941e83f8&cv_ct_cx=micro%2Busb%2Bcable&keywords=micro%2Busb%2Bcable&pd_rd_i=B0B1DKK4YK&pd_rd_r=cf0eae90-cacc-4eca-ad17-5eb8632b3a18&pd_rd_w=V0qQ2&pd_rd_wg=PitP7&pf_rd_p=4a3002a5-aa21-4f7f-92ac-d6af941e83f8&pf_rd_r=N5AYRQTPF0A4MJRBJ37K&qid=1765242344&refinements=p_n_g-101014941094111%3A119746480011&rnid=119746477011&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-e169343e-09af-4d41-85b1-8335fe8f32d0-spons&aref=4srWwr5c3B&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1,	214.7,	For powering ESP32,	
+14,	300 Resistor, 	10	0.1	1	https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-300R/1492	215.7	300 Ω through-hole (for LEDs)	
+15,	10 Ressistor, 	5,	0.1,	0.5,	https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338,	216.2,	10 kΩ through-hole (for phototransistor pull-ups),
