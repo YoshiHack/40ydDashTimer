@@ -31,6 +31,7 @@ ESP-NOW will be used for communication between the start gate, finish gate, and 
 
 Added basic code skeleton
 We added these code strips, all code can be found at https://github.com/YoshiHack/40ydDashTimer
+<img width="1747" height="689" alt="Screenshot 2025-12-05 192930" src="https://github.com/user-attachments/assets/27887378-32c6-4550-a80c-93f8206daadd" />
 
 ESP-NOW Skeleton created for all three stations:
 Finish Gate: This gate will be for stopping the timer and the new code is at Firmware/FinishGate/finish-gate.ino
