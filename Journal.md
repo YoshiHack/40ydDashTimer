@@ -1,4 +1,13 @@
-Dec, 11, 2025 approx 7hr of work time
+Dec, 11, 2025 approx 9hr of work time
+Now i worked on the cad file
+im currently working on the casing for the laser modules, this is the first revision:<img width="1076" height="868" alt="Screenshot 2025-12-11 211436" src="https://github.com/user-attachments/assets/c1e1dd43-e132-4b1a-94a9-4273a450aff4" />
+ this includes 1 laser hole, 2 holes for Led(s), a shelf for the ESP, a tripod mount, and cable holes
+
+Today im working on the BOM
+Today i worked on the Bill Of materials:image_2025-12-09_183159802
+
+I made sure to include the Price, Quantity, Name, Description, And Purpose are all listed
+added all of the materials required for the build you can view the BOM at BOM.csv
 Today im working on the BOM
 Today i worked on the Bill Of materials: <img width="1755" height="679" alt="Screenshot 2025-12-09 183141" src="https://github.com/user-attachments/assets/ef9bcfc4-8333-4b9d-a3ec-a828e8305398" />
 
