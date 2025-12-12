@@ -2,7 +2,7 @@ Dec, 11, 2025 approx 9hr of work time
    Now i worked on the cad file
 im currently working on the casing for the laser modules, this is the first revision:<img width="1076" height="868" alt="Screenshot 2025-12-11 211436" src="https://github.com/user-attachments/assets/c1e1dd43-e132-4b1a-94a9-4273a450aff4" />
  this includes 1 laser hole, 2 holes for Led(s), a shelf for the ESP, a tripod mount, and cable holes
-
+---
    Today im working on the BOM
 Today i worked on the Bill Of materials:
 
@@ -15,6 +15,7 @@ I made sure to include the Price, Quantity, Name, Description, And Purpose are a
 added all of the materials required for the build you can view the BOM at BOM.csv
 
 Dec, 5, 2025 
+---
 Approx 1hr of total work time
 
    Today I started planning the 40-yard Dash Timer and created the GitHub repository: https://github.com/YoshiHack/40ydDashTimerimage_2025-12-05_190850729
@@ -37,8 +38,9 @@ Using a protected 1S 18650 Li-ion setup with a TP4056 USB-C charging board and a
 (This provides safe charging and a stable power rail for the ESP32 and laser modules.)
 
 ESP-NOW will be used for communication between the start gate, finish gate, and the base station.
-
+---
 Added basic code skeleton
+
 We added these code strips, all code can be found at https://github.com/YoshiHack/40ydDashTimer
 <img width="1747" height="689" alt="Screenshot 2025-12-05 192930" src="https://github.com/user-attachments/assets/27887378-32c6-4550-a80c-93f8206daadd" />
 
