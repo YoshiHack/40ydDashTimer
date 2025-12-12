@@ -1,6 +1,6 @@
 Dec, 11, 2025 approx 7hr of work time
 Today im working on the BOM
-Today i worked on the Bill Of materials: ![BOM](ScreenShots/Screenshot 2025-12-09 183141.png)
+Today i worked on the Bill Of materials: <img width="1755" height="679" alt="Screenshot 2025-12-09 183141" src="https://github.com/user-attachments/assets/ef9bcfc4-8333-4b9d-a3ec-a828e8305398" />
 
 I made sure to include the Price, Quantity, Name, Description, And Purpose are all listed
 added all of the materials required for the build you can view the BOM at BOM.csv
