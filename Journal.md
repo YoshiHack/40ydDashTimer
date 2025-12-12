@@ -1,3 +1,10 @@
+Dec, 11, 2025 approx 7hr of work time
+Today im working on the BOM
+Today i worked on the Bill Of materials:image_2025-12-09_183159802
+
+I made sure to include the Price, Quantity, Name, Description, And Purpose are all listed
+added all of the materials required for the build you can view the BOM at BOM.csv
+
 Dec, 5, 2025 
 Approx 1hr of total work time
 
