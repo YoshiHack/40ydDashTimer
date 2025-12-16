@@ -125,12 +125,6 @@ Recommended filament: **PETG** for outdoor durability.
 
 ---
 
-## License
-This project is licensed under the **GNU GPL-3.0 License**.  
-See the included `LICENSE` file for details.
-
----
-
 ## Acknowledgments
 Designed and developed by **Jackson Hughes** as a custom engineering and sprint performance tracking system.  
 Built for accuracy, reliability, and expandability (multiple splits, leaderboards, mobile app integration, etc.).
