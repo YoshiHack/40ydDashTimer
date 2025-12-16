@@ -1,58 +1,133 @@
-#include <esp_now.h>
-#include <WiFi.h>
+/*
+  40-Yard Dash Timer — Base Station (ESP32)
+  - Receives START / FINISH events
+  - Computes elapsed sprint time
+  - SIM_MODE allows testing via Serial input (no hardware required)
+  License: GPL-3.0
+*/
 
-struct GatePacket {
-  char gate[7];       // "start" or "finish"
-  uint64_t timestamp; 
+#include <WiFi.h>
+#include <esp_now.h>
+
+#define SIM_MODE 1  // 1 = Serial simulation, 0 = real ESP-NOW packets
+
+// ===================== PACKET STRUCT =====================
+#pragma pack(push, 1)
+struct TimerPacket {
+  uint8_t gate_id;      // 0=start, 1=finish
+  uint8_t event_type;   // 1=trigger
+  uint32_t seq;
+  uint32_t uptime_ms;
+};
+#pragma pack(pop)
+
+// Gate IDs
+static const uint8_t GATE_START  = 0;
+static const uint8_t GATE_FINISH = 1;
+
+// ===================== STATE =====================
+enum RunState {
+  IDLE,
+  RUNNING
 };
 
-volatile uint64_t startTime = 0;
-volatile uint64_t finishTime = 0;
+static RunState state = IDLE;
+static uint32_t startTimeMs = 0;
+static uint32_t finishTimeMs = 0;
 
-void onReceive(const uint8_t *mac, const uint8_t *incomingData, int len) {
-  GatePacket packet;
-  memcpy(&packet, incomingData, sizeof(packet));
+// ===================== HELPERS =====================
+void handleTrigger(uint8_t gateId) {
+  uint32_t now = millis();
 
-  Serial.print("Received from gate: ");
-  Serial.println(packet.gate);
-  Serial.print("Timestamp: ");
-  Serial.println(packet.timestamp);
-
-  if (strcmp(packet.gate, "start") == 0) {
-    startTime = packet.timestamp;
+  if (gateId == GATE_START) {
+    if (state == IDLE) {
+      startTimeMs = now;
+      state = RUNNING;
+      Serial.println("[BASE] START detected");
+    } else {
+      Serial.println("[BASE] WARNING: START received while already running");
+    }
   }
 
-  if (strcmp(packet.gate, "finish") == 0) {
-    finishTime = packet.timestamp;
+  if (gateId == GATE_FINISH) {
+    if (state == RUNNING) {
+      finishTimeMs = now;
+      uint32_t elapsed = finishTimeMs - startTimeMs;
+      state = IDLE;
 
-    if (startTime > 0) {
-      double timeSec = (finishTime - startTime) / 1000000.0;
-      Serial.print("40-Yard Dash Time: ");
-      Serial.print(timeSec, 4);
-      Serial.println(" sec");
+      Serial.println("[BASE] FINISH detected");
+      Serial.print("[BASE] 40-yard time: ");
+      Serial.print(elapsed / 1000.0, 3);
+      Serial.println(" seconds");
+      Serial.println("--------------------------------");
+    } else {
+      Serial.println("[BASE] WARNING: FINISH received before START");
     }
   }
 }
 
+// ===================== ESP-NOW CALLBACK =====================
+#if !SIM_MODE
+void onReceive(const uint8_t *mac, const uint8_t *data, int len) {
+  if (len != sizeof(TimerPacket)) return;
+
+  TimerPacket pkt;
+  memcpy(&pkt, data, sizeof(pkt));
+
+  handleTrigger(pkt.gate_id);
+}
+#endif
+
+// ===================== SETUP =====================
 void setup() {
   Serial.begin(115200);
+  delay(200);
 
+#if SIM_MODE
+  Serial.println();
+  Serial.println("=== Base Station (SIM MODE) ===");
+  Serial.println("Type:");
+  Serial.println("  s  -> simulate START");
+  Serial.println("  f  -> simulate FINISH");
+  Serial.println("--------------------------------");
+#else
   WiFi.mode(WIFI_STA);
-  Serial.println("Base Station Node");
+  WiFi.disconnect(true);
 
   if (esp_now_init() != ESP_OK) {
-    Serial.println("ESP-NOW Init Failed!");
-    return;
+    Serial.println("ESP-NOW init FAILED");
+    while (true) {
+      delay(100);
+    }
   }
 
   esp_now_register_recv_cb(onReceive);
 
-  // Print MAC so you can add it to the gate nodes
-  Serial.print("Base Station MAC: ");
+  Serial.println();
+  Serial.println("=== Base Station Ready ===");
+  Serial.print("MAC Address: ");
   Serial.println(WiFi.macAddress());
+#endif
 }
 
+// ===================== LOOP =====================
 void loop() {
-  // Base station mostly waits for packets
-}
+#if SIM_MODE
+  if (Serial.available()) {
+    char c = (char)Serial.read();
 
+    if (c == 's' || c == 'S') {
+      Serial.println("SIM INPUT: START");
+      handleTrigger(GATE_START);
+    }
+
+    if (c == 'f' || c == 'F') {
+      Serial.println("SIM INPUT: FINISH");
+      handleTrigger(GATE_FINISH);
+    }
+  }
+  delay(5);
+#else
+  delay(10);
+#endif
+}
