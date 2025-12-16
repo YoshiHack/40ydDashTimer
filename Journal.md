@@ -1,4 +1,6 @@
-##Dec, 16, 2025 Today I Expanded the code
+## Dec, 16, 2025 Approx 6h of work time
+
+## Today I Expanded the code
 
 Today i expanded the Base station, start, and stop laser's codeimage
 including a new SIM loop so i can test the ESP code when i get the ESP32 DevkitC
