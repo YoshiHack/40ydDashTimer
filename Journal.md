@@ -1,5 +1,16 @@
+Dec, 19, 2025 Approx 6hr of work time
+
+Dec, 16, 2025 Approx 6hr of work time
+---
+   Expanded the code
+Today i expanded the Base station, start, and stop laser's codeimage
+including a new SIM loop so i can test the ESP code when i get the ESP32 DevkitC
+
+I also set up Hackatime so if you want to find me my name is YoshiHack on it.
+---
 Dec, 11, 2025 approx 9hr of work time
-   Now i worked on the cad file
+---
+Now i worked on the cad file
 im currently working on the casing for the laser modules, this is the first revision:<img width="1076" height="868" alt="Screenshot 2025-12-11 211436" src="https://github.com/user-attachments/assets/c1e1dd43-e132-4b1a-94a9-4273a450aff4" />
  this includes 1 laser hole, 2 holes for Led(s), a shelf for the ESP, a tripod mount, and cable holes
 ---
@@ -13,11 +24,9 @@ Today i worked on the Bill Of materials: <img width="1755" height="679" alt="Scr
 
 I made sure to include the Price, Quantity, Name, Description, And Purpose are all listed
 added all of the materials required for the build you can view the BOM at BOM.csv
-
-Dec, 5, 2025 
 ---
-Approx 1hr of total work time
-
+Dec, 5, 2025 Approx 1hr of total work time
+---
    Today I started planning the 40-yard Dash Timer and created the GitHub repository: https://github.com/YoshiHack/40ydDashTimerimage_2025-12-05_190850729
 
 I began selecting the core components and defining the system architecture.

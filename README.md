@@ -109,6 +109,34 @@ Recommended filament: **PETG** for outdoor durability.
 
 ---
 
+## SIM_MODE Quick Test (No Hardware Needed)
+
+All firmware supports `SIM_MODE` so the logic can be tested before parts arrive.
+
+### Base Station
+Open Serial Monitor @ **115200 baud**.
+
+Keys:
+- `h` = help
+- `r` = reaction start (READY / SET / random delay / GO)
+- `s` = simulate START trigger
+- `f` = simulate FINISH trigger
+- `p` = print CSV header
+- `l` = toggle packet logging
+- `x` = reset to IDLE
+
+Expected:
+- After `r`, wait for `GO!`, then press `s`, wait, press `f`
+- You should see:
+  - human-readable time output
+  - a `CSV,...` line (paste into Google Sheets)
+  - a `LOG,...` line (if logging is on)
+
+### Start Gate / Finish Gate
+Type `b` to simulate a beam break event (prints debug output).
+
+---
+
 ## Development Status
 - ✔ Repository created  
 - ✔ Part selection in progress  

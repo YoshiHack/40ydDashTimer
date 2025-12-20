@@ -8,6 +8,8 @@
 
 #include <WiFi.h>
 #include <esp_now.h>
+#include "../shared/protocol.h"
+
 
 #define SIM_MODE 1  // 1 = simulate beam break via Serial, 0 = real sensor + ESP-NOW
 
@@ -30,17 +32,7 @@ static const uint32_t LOCKOUT_MS  = 1200;
 static const uint32_t ALIGN_BLINK_MS = 150;
 
 // Packet config
-static const uint8_t GATE_ID_START = 0;
-
-// ===================== PACKET STRUCT =====================
-#pragma pack(push, 1)
-struct TimerPacket {
-  uint8_t gate_id;      // 0=start, 1=finish
-  uint8_t event_type;   // 1=trigger
-  uint32_t seq;         // increments each send
-  uint32_t uptime_ms;   // millis() for debugging
-};
-#pragma pack(pop)
+static const uint8_t GATE_ID_START = GATE_START;
 
 // ===================== GLOBALS =====================
 static bool beamPresentIsHigh = true;
@@ -82,7 +74,7 @@ static void onSent(const uint8_t *mac, esp_now_send_status_t status) {
 static bool sendStartPacket() {
   TimerPacket pkt;
   pkt.gate_id = GATE_ID_START;
-  pkt.event_type = 1; // trigger
+  pkt.event_type = EVENT_TRIGGER;
   pkt.seq = ++seqNum;
   pkt.uptime_ms = millis();
 
