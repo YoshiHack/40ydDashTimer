@@ -1,4 +1,4 @@
-Dec, 19, 2025 Approx 6hr of work time
+Dec, 19, 2025 Approx 5hr of work time 
 
 Dec, 16, 2025 Approx 6hr of work time
 ---
