@@ -1,5 +1,12 @@
-Dec, 19, 2025 Approx 5hr of work time 
+Dec, 19, 2025 Approx 6hr of work time
+---
+Today i added a couple features and stabilization:
 
+1. Added reaction time start mode on base station: READY/SET/random delay/GO + false start detection; verified using SIM_MODE via Serial
+2. Then I spent a hour looking through the code line by line to make sure i didn't make a mistake
+3. Then i added a CSV output for times
+4. Then i added a ReadMe for the firmware folder
+---
 Dec, 16, 2025 Approx 6hr of work time
 ---
    Expanded the code
