@@ -11,7 +11,7 @@ Dec, 19, 2025 Approx 7hr of work time
 ---
 Today i added a couple features and stabilization:
 
-1. Added reaction time start mode on base station: READY/SET/random delay/GO + false start detection; verified using SIM_MODE via Serial
+1. Added reaction time start mode on base station: READY/SET/random delay/GO + false start detection; verified using SIM_MODE via Serial <img width="731" height="257" alt="Screenshot 2025-12-19 222835" src="https://github.com/user-attachments/assets/28c05d20-fb0a-4559-8338-2212a2f038cb" />
 2. Then I spent a hour looking through the code line by line to make sure i didn't make a mistake
 3. Then i added a CSV output for times
 4. Then i added a ReadMe for the firmware folder
