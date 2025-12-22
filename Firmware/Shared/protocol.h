@@ -5,9 +5,6 @@ static const uint8_t GATE_START  = 0;
 static const uint8_t GATE_FINISH = 1;
 
 static const uint8_t EVENT_TRIGGER = 1;
-// reserved for later:
-// static const uint8_t EVENT_ARM = 2;
-// static const uint8_t EVENT_GO  = 3;
 
 #pragma pack(push, 1)
 struct TimerPacket {

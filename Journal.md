@@ -1,4 +1,13 @@
-Dec, 19, 2025 Approx 6hr of work time
+Dec, 22, 2025 Approx 16hr of work time
+---
+Today i worked and worked
+I barely have any time left so I'm going to work all day
+
+I worked on bugs in all of the code (there were a ton in The base station)Screenshot 2025-12-22 122116
+I finalized the three-node firmware architecture: Start Gate (ESP32): detects a beam break and sends a trigger packet, Finish Gate (ESP32): detects the finish beam break and sends a trigger packet, Base Station (ESP32): receives packets, manages state, and computes results
+Since I don’t have hardware yet, I implemented and verified SIM_MODE across all firmware: Beam breaks can be simulated through the Serial Monitor Full start finish timing can be tested without sensors This lets me validate logic, timing, and state transitions now instead of waiting for parts
+---
+Dec, 19, 2025 Approx 7hr of work time
 ---
 Today i added a couple features and stabilization:
 
