@@ -1,3 +1,11 @@
+Dec, 23, 2025 Approx 11hr of work time
+---
+Today I added a couple of features
+today I added a reaction mode to the Base Station:
+Prints READY → SET → random delay → GO Detects and flags false starts Allows traditional timing if reaction mode isn’t used ( I got lost so it took me some time)<img width="606" height="592" alt="Screenshot 2025-12-23 234648" src="https://github.com/user-attachments/assets/c5381133-c4ad-46ad-9b29-8d822f9fcc37" />
+
+and added some bug fixes
+---
 Dec, 22, 2025 Approx 16hr of work time
 ---
 Today i worked and worked
