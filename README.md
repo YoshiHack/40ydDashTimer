@@ -51,10 +51,11 @@ Laser modules provide tight, reliable beams to ensure accurate timing.
 ## Hardware Components
 
 ### Core Electronics
-- 3× ESP32-WROOM DevKit V1 (Start, Finish, Base)
+- 3× ESP32-WROOM DevKit V1 (Start, Finish, Base)<img width="894" height="613" alt="image" src="https://github.com/user-attachments/assets/0cc6e4b1-039e-400b-a1e7-0956fb012e26" />
+
 
 ### Laser Timing System
-- 2× 5V Laser Diode Modules  
+- 2× 5V Laser Diode Modules  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/1ac48543-4447-4301-b667-ae62e9334253" />
 - 2× Laser Receiver Modules  
 - 4× Mini Ball-Head Mounts  
 - 2× Tripods or custom 3D-printed stands  
@@ -65,23 +66,20 @@ Laser modules provide tight, reliable beams to ensure accurate timing.
 - Resistors (220Ω recommended)
 
 ### Displays
-- 1× 1.3" I2C OLED (128×64) for base station  
+- 1× 1.3" I2C OLED (128×64) for base station  <img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/8acf896d-b961-4460-9b7d-fae80f2dc704" />
 
 ---
 
 ## Power System (Recommended Best Setup)
 Each wireless gate uses:
 
-- 1× Protected 18650 Li-ion battery  
-- 1× TP4056 USB-C Li-ion charger module (with protection)  
-- 1× DC-DC Boost Converter (3.7V → 5V)  
-- 1× Panel-mount power switch  
-- (Optional) MAX1704x fuel gauge for battery percentage reporting
+1. Amazon Battery pack ( I dont want to risk a fire )<img width="894" height="965" alt="image" src="https://github.com/user-attachments/assets/631309ba-68cb-4c59-af69-7c4f58c2e818" />
+2. A USB-A to USB-B Cable
 
 Base Station can run off:
 - Laptop USB  
 or  
-- The same 18650 + TP4056 + Boost system as the gates  
+- The same system as the gates  
 
 ---
 
@@ -104,6 +102,7 @@ Custom gate housings include:
 - Alignment mounts for laser and receiver  
 - Windows for LEDs  
 - Power switch and USB-C port access  
+<img width="1076" height="868" alt="Screenshot 2025-12-11 211436" src="https://github.com/user-attachments/assets/7bb221db-198a-490e-8f30-427e9d9ac9b4" />
 
 Recommended filament: **PETG** for outdoor durability.
 
@@ -138,18 +137,20 @@ Type `b` to simulate a beam break event (prints debug output).
 ---
 
 ## Development Status
-- ✔ Repository created  
-- ✔ Part selection in progress  
-- ✔ Power architecture finalized  
-- ☐ 3D models in progress  
-- ☐ ESP-NOW firmware skeleton  
-- ☐ Prototype gate builds  
-- ☐ Outdoor testing  
+- Repository created  
+- Part selection finished  
+- Power architecture finalized  
+- 3D models finished  
+- ESP-NOW firmware completed  
+- No prototype gate builds preformed yet  
+- No Outdoor testing  
 
 ---
 
 ## Screenshots
-(Place images inside the `/hardware` or `/media` folder and embed them here.)
+<img width="506" height="389" alt="Screenshot 2025-12-11 200626" src="https://github.com/user-attachments/assets/481d02ce-d1fc-4692-96c1-10a2ce77cbcc" />
+<img width="656" height="450" alt="Screenshot 2025-12-11 204724" src="https://github.com/user-attachments/assets/eb2fc81e-aa13-49ef-8a62-183b7c50935f" />
+<img width="1168" height="856" alt="Screenshot 2025-12-05 234738" src="https://github.com/user-attachments/assets/9a83712f-048a-4192-acdc-7c5c9fe2e63e" />
 
 ---
 
