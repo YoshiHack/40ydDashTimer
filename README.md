@@ -153,7 +153,3 @@ Type `b` to simulate a beam break event (prints debug output).
 <img width="1168" height="856" alt="Screenshot 2025-12-05 234738" src="https://github.com/user-attachments/assets/9a83712f-048a-4192-acdc-7c5c9fe2e63e" />
 
 ---
-
-## Acknowledgments
-Designed and developed by **Jackson Hughes** as a custom engineering and sprint performance tracking system.  
-Built for accuracy, reliability, and expandability (multiple splits, leaderboards, mobile app integration, etc.).
