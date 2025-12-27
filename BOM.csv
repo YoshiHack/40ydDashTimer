@@ -1,15 +1,16 @@
-Item,Name,Quantity,Unit Price ($),Total ($),URL,Running total ($),Notes
+Item,Name,Quantity,Unit Price ($),Total ($),URL,Running Total ($),Notes
 1,ESP32-DevKitC-32E Development Board,3,10.00,30.00,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-DEVKITC-32E/12091810,30.00,MCU for start/finish/base station
-2,Laser Diode Module 5V,2,5.95,11.90,https://www.adafruit.com/product/1054,41.90,Laser beam for gate
-3,Photodiode Receiver / Light Sensor,2,0.30,0.60,https://www.digikey.com/en/products/detail/liteon/LTR-4206E/121710,42.50,Break-beam detection sensor
-4,OLED I²C Display,1,19.95,19.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/938/5774238,62.45,Base station display
-5,Active Piezo Buzzer 5V,1,0.33,0.33,https://www.addicore.com/products/active-buzzer-5v?srsltid=AfmBOop-lgo3ZL9sDTf6a_FAHHsowkGRmnNyBDUC2orbnuTU4dIsjfTO,62.78,Start/finish beep
-6,SPDT Slide Switch,3,0.71,2.13,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602,64.91,Main power switch
-8,LED Red Status Indicator,6,1.71,10.26,https://www.digikey.com/en/products/detail/broadcom-limited/HLMP-6300/637659,75.17,Status indication LEDs
-9,LED Green Status Indicator,6,1.77,10.62,https://www.digikey.com/en/products/detail/broadcom-limited/HLMP-6500/637666,85.79,Status indication LEDs
-10,JST-PH 2-pin Cable (battery/laser connections),5,1.77,8.85,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4714/13175532,94.64,Connector for sensors + battery
-11,Hookup Wire Kit (22 AWG),1,15.90,15.90,https://www.digikey.com/en/products/detail/adafruit-industries-llc/1311/6198255,110.54,General wiring
-12,USB Power Bank,2,25.00,50.00,https://www.amazon.com/Anker-Travel-Ready-Technology-High-Speed-Output%EF%BC%88Black%EF%BC%89%EF%BC%8C1pack/dp/B0D5CLSMFB?th=1,160.54,"Power for Start+Finish gates (Base station powered by laptop USB)"
-13,Micro USB Cable (charging/power),3,5.99,17.97,https://www.amazon.com/Charging-Compatible-Samsung-Android-Smartphones/dp/B0B1DKK4YK,178.51,For powering ESP32
-14,300 Resistor,10,0.10,1.00,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-300R/1492,179.51,300 Ω through-hole (for LEDs)
-15,10 Resistor,5,0.10,0.50,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338,180.01,10 kΩ through-hole (for phototransistor pull-ups)
+2,Laser Diode Module 5V,2,5.95,11.90,https://www.adafruit.com/product/1054,41.90,Pre-wired laser module (not sold by Digi-Key)
+3,Phototransistor Light Sensor (LTR-4206E),2,0.30,0.60,https://www.digikey.com/en/products/detail/liteon/LTR-4206E/121710,42.50,Break-beam receiver
+4,OLED I2C Display 128x64,1,19.95,19.95,https://www.digikey.com/en/products/detail/adafruit-industries-llc/938/5774238,62.45,Base station display
+5,Active Piezo Buzzer 5V,1,1.49,1.49,https://www.digikey.com/en/products/detail/cui-devices/CEM-1203-42-5V-60/14644953,63.94,Audible start/finish indicator
+6,SPDT Slide Switch,3,0.71,2.13,https://www.digikey.com/en/products/detail/c-k/OS102011MS2QN1/411602,66.07,Main power switches
+7,Red LED 5mm Indicator,6,0.12,0.72,https://www.digikey.com/en/products/detail/kingbright/WP7113ID/1747551,66.79,Status LEDs
+8,Green LED 5mm Indicator,6,0.12,0.72,https://www.digikey.com/en/products/detail/kingbright/WP7113GD/1747561,67.51,Status LEDs
+9,JST-PH 2-Pin Cable Assembly,5,0.95,4.75,https://www.digikey.com/en/products/detail/adafruit-industries-llc/4714/13175532,72.26,Battery / laser connections
+10,22 AWG Hookup Wire Kit,1,15.90,15.90,https://www.digikey.com/en/products/detail/adafruit-industries-llc/1311/6198255,88.16,General wiring
+11,USB Power Bank,2,25.00,50.00,https://www.amazon.com/dp/B0D5CLSMFB,138.16,Power for start + finish gates
+12,Micro-USB Cable,3,5.99,17.97,https://www.amazon.com/dp/B0B1DKK4YK,156.13,Power cables
+13,300 Ohm Resistor (LED current limit),10,0.10,1.00,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-300R/1492,157.13,LED resistors
+14,10k Ohm Resistor (pull-up),5,0.10,0.50,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338,157.63,Phototransistor pull-ups
+15,Misc mounting hardware allowance,1,22.20,22.20,N/A,179.83,Screws, standoffs, adhesive, etc.
