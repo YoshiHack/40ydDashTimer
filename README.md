@@ -1,14 +1,14 @@
-# 40-Yard Dash Wireless Timing System
-A fully wireless, laser-based 40-yard dash timer built using ESP32 microcontrollers, ESP-NOW low-latency communication, and 3D-printed gate hardware. Designed for high-accuracy sprint timing with millisecond precision and clean field deployment.
+# 40yd Dash Timer
+A wireless, laser based 40yd dash timer built using 3 ESP32 DEVKITC 32E microcontrollers, ESP-NOW is a low-latency communication method where 2 or more ESP32s can connect and get a low latency signal, the 40yd Dash timer is designed for high-accuracy sprint timing with millisecond precision and easy deployment anywhere.
 
 ---
 
 ## Project Overview
-This project creates a professional-grade timing system for 40-yard dash performance testing.  
+This project creates a professional grade timing system for 40yd dash speed testing.  
 It uses two wireless timing gates (start and finish) and a base station to display times and log results.
 
-Each gate transmits beam-break events using ESP-NOW, allowing extremely low-latency communication without Wi-Fi networks or physical cables.  
-Laser modules provide tight, reliable beams to ensure accurate timing.
+Each gate transmits beam break events using the ESP-NOW protocol, allowing extreme low-latency communication without Wi-Fi networks or physical cables.
+Laser modules provide tight beams to ensure accurate timing.
 
 ---
 
@@ -28,37 +28,37 @@ Laser modules provide tight, reliable beams to ensure accurate timing.
 ## System Architecture
 
 ### Start Gate Node
-- Detects first beam break  
-- Sends event packet over ESP-NOW  
-- Battery-powered  
-- LED indicators for alignment and status  
+- Detects first beam break
+- Sends event packet over ESP NOW
+- Battery powered
+- LED indicators for alignment and status
 
 ### Finish Gate Node
-- Detects finish beam break  
-- Sends event packet  
-- Battery-powered  
-- Identical housing to start gate  
+- Detects finish beam break
+- Sends event packet
+- Battery powered
+- Identical housing to start gate
 
 ### Base Station
-- Receives timing packets from both gates  
-- Computes sprint time  
-- Displays results on OLED  
-- Buzzer + LEDs for feedback  
-- Can log data to laptop or custom app  
+- Receives timing packets from both gates
+- Computes sprint time
+- Displays results on OLED screen
+- Buzzer + LEDs for feedback
+- Can log data to laptop or custom app if i get that far into project
 
 ---
 
 ## Hardware Components
 
 ### Core Electronics
-- 3× ESP32-WROOM DevKit V1 (Start, Finish, Base)<img width="894" height="613" alt="image" src="https://github.com/user-attachments/assets/0cc6e4b1-039e-400b-a1e7-0956fb012e26" />
+- 3× ESP32 WROOM DevKit V1 (Start, Finish, Base)<img width="894" height="613" alt="image" src="https://github.com/user-attachments/assets/0cc6e4b1-039e-400b-a1e7-0956fb012e26" />
 
 
 ### Laser Timing System
 - 2× 5V Laser Diode Modules  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/1ac48543-4447-4301-b667-ae62e9334253" />
-- 2× Laser Receiver Modules  
-- 4× Mini Ball-Head Mounts  
-- 2× Tripods or custom 3D-printed stands  
+- 2× Laser Receiver Modules
+- 4× Mini Ball-Head Mounts
+- 2× Tripods or custom 3D-printed stands
 
 ### Indicators and User Feedback
 - 1× 5V Active Piezo Buzzer  
@@ -137,13 +137,13 @@ Type `b` to simulate a beam break event (prints debug output).
 ---
 
 ## Development Status
-- Repository created  
-- Part selection finished  
-- Power architecture finalized  
+- Repository created
+- Part selection finished
+- Power architecture finalized
 - 3D models finished  
 - ESP-NOW firmware completed  
-- No prototype gate builds preformed yet  
-- No Outdoor testing  
+- No prototype gate builds preformed yet
+- No Outdoor testing
 
 ---
 
