@@ -13,4 +13,4 @@ Item,Name,Quantity,Unit Price ($),Total ($),URL,Running Total ($),Notes
 12,Micro-USB Cable,3,5.99,17.97,https://www.amazon.com/dp/B0B1DKK4YK,156.13,Power cables
 13,300 Ohm Resistor (LED current limit),10,0.10,1.00,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-300R/1492,157.13,LED resistors
 14,10k Ohm Resistor (pull-up),5,0.10,0.50,https://www.digikey.com/en/products/detail/yageo/CFR-25JB-52-10K/338,157.63,Phototransistor pull-ups
-15,Misc mounting hardware allowance,1,22.20,22.20,N/A,179.83,Screws, standoffs, adhesive, etc.
+15,Misc mounting hardware allowance,1,22.20,22.20,N/A,179.83,Screws standoffs adhesive etc.
