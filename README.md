@@ -51,22 +51,22 @@ Laser modules provide tight beams to ensure accurate timing.
 ## Hardware Components
 
 ### Core Electronics
-- 3× ESP32 WROOM DevKit V1 (Start, Finish, Base)<img width="894" height="613" alt="image" src="https://github.com/user-attachments/assets/0cc6e4b1-039e-400b-a1e7-0956fb012e26" />
+- 3x ESP32 WROOM DevKit V1 (Start, Finish, Base)<img width="894" height="613" alt="image" src="https://github.com/user-attachments/assets/0cc6e4b1-039e-400b-a1e7-0956fb012e26" />
 
 
 ### Laser Timing System
-- 2× 5V Laser Diode Modules  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/1ac48543-4447-4301-b667-ae62e9334253" />
-- 2× Laser Receiver Modules
-- 4× Mini Ball-Head Mounts
-- 2× Tripods or custom 3D-printed stands
+- 2x 5V Laser Diode Modules  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/1ac48543-4447-4301-b667-ae62e9334253" />
+- 2x Laser Receiver Modules
+- 4x Mini Ball-Head Mounts
+- 2x Tripods or custom 3D-printed stands
 
 ### Indicators and User Feedback
-- 1× 5V Active Piezo Buzzer  
+- 1x 5V Active Piezo Buzzer  
 - High-brightness green and red LEDs (2–4 total)  
 - Resistors (220Ω recommended)
 
 ### Displays
-- 1× 1.3" I2C OLED (128×64) for base station  <img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/8acf896d-b961-4460-9b7d-fae80f2dc704" />
+- 1x 1.3" I2C OLED (128×64) for base station  <img width="750" height="412" alt="image" src="https://github.com/user-attachments/assets/8acf896d-b961-4460-9b7d-fae80f2dc704" />
 
 ---
 
